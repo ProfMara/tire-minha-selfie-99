@@ -14,17 +14,26 @@ function start(){
     escuta.start();
 } 
 
-var conteudo ='';
+var transcricao ='';
 //evento que diz ao computador que obteve os resultados
 escuta.onresult = (e)=>{
-    //executa os comandos nesse evento
 
     //armazena a transcrição
-    conteudo = e.results[0][0].transcript;
+    transcricao = e.results[0][0].transcript;
     //exibe a transcrição
-    caixaTexto.innerHTML = conteudo;
-   
+    caixaTexto.innerHTML = transcricao;
+    
+    if(transcricao == "tire minha selfie" || transcricao == "tira minha selfie"){
+        pronuncia = new SpeechSynthesisUtterance("OI VINÍCIUS");
+        console.log(pronuncia);
+        //facilitar a sua vida
+        synthesis = window.speechSynthesis;
+        //método que permite você ouvir o texto
+        synthesis.speak(pronuncia);
+    }
+
 }
+
 
 
 
