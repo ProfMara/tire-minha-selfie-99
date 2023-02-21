@@ -1,0 +1,42 @@
+<html>
+    <head>
+        
+       <title>App minha selfie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--LINK DA BIBLIOTECA BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!--LINK DO ESTILO-->
+        <link href="style.css" rel="stylesheet">
+
+        <!--LINK DA BIBLIOTECA WEBCAM.JS-->
+       
+<body>
+    <div class="container">
+        <center>
+            
+            <h1>App Selfie por voz 
+                
+            </h1>
+            <hr>
+            <h4 style="color:red;">Pressione permitir no pop-up, depois dê um comando de voz</h4>
+            
+            <div class="form-group">
+                <h3>Diga "tire minha selfie"</h3>
+                <label>Sua saída de voz : </label>
+                <textarea type="text" class="form-control" id="caixaTexto" ></textarea>
+               
+            </div>
+
+            <button class="btn btn-primary" onclick="start()">Iniciar</button>
+            <p>Pressione o botão Iniciar</p>
+            
+           
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
